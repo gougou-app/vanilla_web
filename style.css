@@ -7,20 +7,15 @@
 nav {
   background-color: hsl(15, 72%, 55%);;
   color: white;
-  height: 60px;
-}
-
-nav {
-  display: flex;
-  max-width: 1100px;
-  margin: 0 auto;
   height: 100%;
+
+  display: flex;
   align-items: center;
 }
 
 nav p {
   font-size: 1.7rem;
-  margin: 1rem auto 1rem 2rem;
+  margin: 1rem auto 1rem 3rem;
 }
 
 .grid-container {
@@ -50,5 +45,16 @@ main .box:hover {
 
 main > .box > p {
   text-align: center;
+}
+
+main > .divider {
+  grid-column: span 5;
+  background: #f7f7f7;
+  border-radius: 1rem;
+  border: 1px solid #000;
+}
+
+main > .divider > p {
+  margin: 1rem;
 }
 
