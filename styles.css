@@ -18,12 +18,17 @@ nav p {
   margin: 1rem auto 1rem 3rem;
 }
 
-.grid-container {
+main {
+  border: 1px solid red;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  margin: 2rem auto;
   gap: 2rem;
-  margin: 2rem 4rem;
-  max-width: 1100px;
+  max-width: 1500px;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 
 main .box {
@@ -32,6 +37,8 @@ main .box {
   color: white;
   padding: 10px 20px;
   border-radius: 1rem;
+
+  max-width: 30rem;
 
   display: grid;
   grid-template-columns: 1;
@@ -48,7 +55,7 @@ main > .box > p {
 }
 
 main > .divider {
-  grid-column: span 5;
+  grid-column: span 4;
   background: #f7f7f7;
   border-radius: 1rem;
   border: 1px solid #000;
@@ -56,5 +63,16 @@ main > .divider {
 
 main > .divider > p {
   margin: 1rem;
+}
+
+@media screen and (max-width: 1500px) {
+main {
+  /* background-color: #000; */
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main > .divider {
+  grid-column: span 3;
+}
 }
 
