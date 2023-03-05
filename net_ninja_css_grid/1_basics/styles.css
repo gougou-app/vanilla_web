@@ -14,7 +14,7 @@ body {
   grid-template-rows: 100px 200px 300px;
   gap: 10px;
   justify-items: stretch;   /* display in columns horizontal */
-  align-items: stretch;       /* display in rows vertical */
+  align-items: stretch;     /* display in rows vertical */
 
   /* use justify|align-self in each cell could apply only to that cell */
 }
