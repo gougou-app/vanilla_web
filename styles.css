@@ -19,7 +19,7 @@ nav p {
 }
 
 main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -32,7 +32,7 @@ main {
 }
 
 main .box {
-  /* font-size: 1.2rem; */
+  font-size: 1.2rem;
   background-color: hsl(15, 72%, 55%);
   color: white;
   padding: 10px 20px;
@@ -52,6 +52,7 @@ main .box:hover {
 
 main > .box > p {
   text-align: center;
+  margin: 2rem auto;
 }
 
 main > .divider {
